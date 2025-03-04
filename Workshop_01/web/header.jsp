@@ -1,6 +1,6 @@
 <%-- 
-    Document   : invalid.jsp
-    Created on : Feb 15, 2025, 9:32:00 PM
+    Document   : header
+    Created on : Mar 4, 2025, 11:26:29 AM
     Author     : LAM
 --%>
 
@@ -12,11 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>
-            <font color="red">
-                Invalid username or password!
-            </font>
-        </h1>
-        <a href="login.jsp">Click here to try again</a>
+        <h1>Hello World!</h1>
     </body>
 </html>

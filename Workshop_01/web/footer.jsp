@@ -1,6 +1,6 @@
 <%-- 
-    Document   : logout
-    Created on : Feb 17, 2025, 10:37:43 AM
+    Document   : footer
+    Created on : Mar 4, 2025, 11:26:41 AM
     Author     : LAM
 --%>
 
@@ -12,7 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h4>You are logged out!</h4>
-        <a href="MianController">Back to login</a>
+        <h1>Hello World!</h1>
     </body>
 </html>

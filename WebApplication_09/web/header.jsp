@@ -1,93 +1,108 @@
-<%-- 
-    Document   : header
-    Created on : Feb 17, 2025, 11:01:38 AM
-    Author     : LAM
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 <style>
-    body {
-        background-color: #1a1a1a;
-        color: white;
-        font-family: Arial, sans-serif;
-        image-rendering: pixelated;
+    .footer {
+        background-color: #2c3e50;
+        color: #fff;
+        padding: 3rem 0;
+        margin-top: 2rem;
     }
 
-    .pixel-text {
-        font-family: 'Press Start 2P', cursive;
-        text-transform: uppercase;
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
     }
 
-    .pixel-border {
-        border: 4px solid black;
-        background-color: #f4c400;
-        box-shadow: 4px 4px 0 black;
-        padding: 10px;
-        display: inline-block;
+    .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #3498db;
     }
 
-    .header {
-        background-color: #20232a;
-        padding: 15px 0;
-        color: white;
-        text-align: center;
+    .footer-section p {
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 
-    .header-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 80%;
-        margin: auto;
+    .footer-links {
+        list-style: none;
     }
 
-    .menu a {
-        color: white;
+    .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+        color: #fff;
         text-decoration: none;
-        margin-right: 20px;
+        transition: color 0.3s ease;
     }
 
-    .menu a:hover {
-        color: #ff5722;
+    .footer-links a:hover {
+        color: #3498db;
     }
 
-    .pixel-button {
-        background-color: #0073e6;
-        color: white;
-        border: 4px solid black;
-        padding: 8px 15px;
-        border-radius: 5px;
-        font-family: 'Press Start 2P', cursive;
-        cursor: pointer;
-        box-shadow: 4px 4px 0 black;
+    .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 
-    .pixel-button:hover {
-        background-color: #ff5722;
+    .social-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        border-top: 1px solid #34495e;
+        font-size: 0.9rem;
     }
 </style>
 
-<body>
-    <header class="header">
-        <div class="header-container">
-            <div>
-                <div class="pixel-border">
-                    <h1 class="pixel-text">Game Store</h1>
-                </div>
-                <nav class="menu">
-                    <a href="#">Store</a>
-                    <a href="#">Categories</a>
-                    <a href="#">Discounts</a>
-                    <a href="#">Support</a>
-                </nav>
-            </div>
-            <div>
-                <button class="pixel-button">Download</button>
-                <a href="#" style="color: white; margin-left: 15px;">Login</a> | 
-                <a href="#" style="color: white; margin-left: 10px;">Language ▼</a>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Về chúng tôi</h3>
+            <p>Shop Online là điểm đến tin cậy cho những sản phẩm chất lượng với giá cả hợp lý. Chúng tôi cam kết mang đến trải nghiệm mua sắm tốt nhất cho khách hàng.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Liên kết nhanh</h3>
+            <ul class="footer-links">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Giỏ hàng</a></li>
+                <li><a href="#">Chính sách</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: 123 Đường ABC, Quận XYZ</p>
+            <p>Email: contact@shoponline.com</p>
+            <p>Điện thoại: (84) 123-456-789</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Theo dõi chúng tôi</h3>
+            <p>Cập nhật tin tức mới nhất và khuyến mãi từ chúng tôi</p>
+            <div class="social-links">
+                <a href="#">📱</a>
+                <a href="#">💬</a>
+                <a href="#">📷</a>
             </div>
         </div>
-    </header>
-</body>
+    </div>
+    
+    <div class="copyright">
+        <p>&copy; 2024 Shop Online. Tất cả quyền được bảo lưu.</p>
+    </div>
+</footer>
